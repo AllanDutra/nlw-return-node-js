@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// CRIO MEUS MODELOS DE TABELAS AQUI.
+
+// por padrão cria a tabela com o mesmo nome do model
+model Feedback {
+
+  // prisma converte o tipo para o do banco especifico
+  id String @id @default(uuid())
+
+  // id Int @id @default(autoincrement()) // usa autoincremento 1,2,3...
+
+  type       String
+  comment    String
+  screenshot String?
+
+  // cria com esse nome mapeado
+
+  @@map("feedbacks")
+}
