@@ -1,19 +1,53 @@
-# SOLID
+## 📚 NLW Return Node JS API with S.O.L.I.D., Prisma and Jest
 
-1. Single Responsibility Principle
-2. Open/Closed Principle
-3. Liskov Substitution Principle
-4. Interface Segregation Principle
-5. Dependency Inversion Principle (UM DOS MAIS IMPORTANTES)
+This repository was developed during the Next Level Week Return promoted by Rocketseat in order to learn how to develop an API in Node following the principles of S.O.L.I.D. using the Prisma ORM and applying unit tests with Jest, plus email submissions with nodemailer
 
----------
+## 📫  Routes
 
-1. Cada classe/função tem uma responsabilidade única;
+**POST**  — "/feedbacks"
 
-2. As classes da aplicação devem ser abertas para extensão mas fechadas para modificação;
+_Create a new feedback_
 
-3. Nós devemos poder substituir uma classe pai por uma herança dela e tudo continuar funcionando;
+body:
 
-4. Tentar segregar as interfaces sempre que conseguir (EX: class Impressora extends Imprimir, Escanear, Digitalizar)
+```
+{
+	"type": string,
+	"comment": string,
+	"screenshot"?: string
+}
+```
 
-5. A classe recebe do ambiente externo as funções que ela vai usar e ela nem faz ideia do que aquela função faz.
+## 🌐 Status
+<p>Finished project ✅</p>
+
+## 🧰 Prerequisites
+<p>Node JS</p>
+
+<p>Enviroment Variables</p>
+
+- DATABASE_URL="file:./dev.db"
+
+## 🔧 Installation
+`$ git clone https://github.com/AllanDutra/nlw-return-node-js.git`
+
+`$ cd nlw-return-node-js`
+
+`$ npm install`
+
+`$ npm run dev`
+
+**Node server listenning at  [http://localhost:3333/](http://localhost:3333/)!**
+
+## 🔨 Tools used
+
+<div>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="80" /> 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" width="80" />
+<img src="https://ik.imagekit.io/ghmg33v8b/technologies-logos/1657210097411_NL4N7owII.jfif?ik-sdk-version=javascript-1.4.3&updatedAt=1658077560194" width="80"/>
+</div>
+
+<hr>
+
+Developed with 💜 by Allan Dutra!
